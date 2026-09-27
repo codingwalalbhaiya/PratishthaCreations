@@ -578,15 +578,31 @@ onValue(ref(db, "varshnay gallery" ), (snapshot)=>{
 
     if(item.category === "sublimation"){
       let img = document.createElement("img");
-      img.src = item.photo;     
-
+      img.src = item.photo; 
 product.appendChild(img);
+
+img.onclick = function(){
+  clickedImgSrc = item.photo;
+  let clickname = item.name;
+  let clikreturn = item.return;
+  let clickprice = item.price;
+  let clickdesc = item.desc;
+
+  let review = document.getElementById("review");
+  review.innerHTML =` <div id="reviewitem">
+  <h2 id="itemh2"> ${clickname}  </h2>
+  <p id="itemp">₹ ${clickprice} </P>
+  <p id="itemp1"> ${clikreturn} </p>
+  <p id="itemp2"> ${clickdesc} </P>
+  </div>
+  `;
+
+
+}
     }
   }
-
 })
 }
-
  show("sublimation")
 
 
