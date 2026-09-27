@@ -1056,5 +1056,17 @@ font-weight: bold;
   display: none;
     
 }
+    
+#banner{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height:auto;
+    background:rgba(255, 255, 0, 0.74);
+    display:flex;
+    line-height: 0;
+  /* align-items: center; */
+  /* overflow: hidden; */
+}
 }
 
