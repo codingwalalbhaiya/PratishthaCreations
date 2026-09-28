@@ -692,6 +692,7 @@ btnk.addEventListener("click",async function(){
   let love = document.getElementById("love").value;
   let message = document.getElementById("message").value;
   let instruction = document.getElementById("instruction").value;
+  let address = document.getElementById("address").value;
   let userPhotoLink = "Image Is Not Selected";
   let productLink = clickedImgSrc;
 
@@ -724,7 +725,7 @@ btnk.addEventListener("click",async function(){
          }
   }
 
-  let finalText = `Love:${love}\nMessage:${message}\nInstruction:${instruction}\nProduct:${productLink}\nUser Photo:${userPhotoLink}`;
+let finalText = `Name:${love}\nMessage:${message}\nCustomer Requirements:${instruction}\nProduct:${productLink}\nUser Photo:${userPhotoLink}\nAddress:${address}`;
   let url = `https://wa.me/${myNumber}?text=${encodeURIComponent(finalText)}`;
 //console.log(url);
 //console.log(finalText);
