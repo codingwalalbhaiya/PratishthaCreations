@@ -943,41 +943,46 @@ font-weight: bold;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-#reviewitem{
-  padding: 15px;
-  font-family: sans-serif;
-}
+ #reviewitem{
+ 
+ text-align: left;
+} 
+
 #itemh2 {
   margin: 0;
-  font-family: 22px;
-  text-transform: capitalize;
+  font-size: 25px;
+  font-weight:800;
 }
 
 #itemp{
-  margin: 8px 0;
-  font-size: 20px;
-  color: #e91e63;
-  font-weight: bold;
+  margin: 6px;;
+  font-size: 24px;
+  color: #E60000;
+  font-weight: 900;
 
 }
 
 #itemp1{
-  margin: 5px 0;
-  font-size: 14px;
-  color: greenyellow;
-  background: #e8f5e9;
+  margin-top:12PX;
+  font-size: 13px;
+  background: #4CAF6E;
+  color: white;
   display: inline-block;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 #itemp2{
-  margin-top: 12px;
-  font-size: 14px;
-  color: #555;
-  line-height: 1.5;
+  background: #F0F0F0;
+  padding: 12px 18px;
+  border-radius: 15px;
+  border-bottom-left-radius: 2px ;
+  overflow:hidden;
+  overflow-wrap:break-word ;
+  word-break: break-word;
+   
 }
-
 
 
 
