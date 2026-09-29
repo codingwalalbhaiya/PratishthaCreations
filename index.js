@@ -733,4 +733,27 @@ let finalText = `NEW ORDER - Pratishtha reation\n\n\n👨‍💼Name:${love}\n\n
   window.open(url, "-blank");
 })
 
+const track = document.getElementById("banner");
+
+
+let index = 0;
+
+let firstclone = track.children[0].cloneNode(true);
+track.appendChild(firstclone);
+const total = track.children.length;
+
+function autoSlide(){
+  index++;
+  track.style.transition = "transform 0.5s ease-in-out";
+  track.style.transform = `translateX(-${index*100}%)`;
+if(index === total-1){
+  setTimeout(()=>{
+    track.style.transition = "none";
+    index = 0;
+    track.style.transform = `translateX(0%)`;
+  },500);
+}
+}
+setInterval(autoSlide,2000);
+
 
