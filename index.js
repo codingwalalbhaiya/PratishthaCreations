@@ -725,7 +725,7 @@ btnk.addEventListener("click",async function(){
          }
   }
 
-let finalText = `Name:${love}\nMessage:${message}\nCustomer Requirements:${instruction}\nProduct:${productLink}\nUser Photo:${userPhotoLink}\nAddress:${address}`;
+let finalText = `NEW ORDER - Pratishtha reation\n\n\n<br>Name:${love}\n\nMessage:${message}\n\nCustomer Requirements:${instruction}\n\nProduct:${productLink}\n\nUser Photo:${userPhotoLink}\n\nAddress:${address}`;
   let url = `https://wa.me/${myNumber}?text=${encodeURIComponent(finalText)}`;
 //console.log(url);
 //console.log(finalText);
